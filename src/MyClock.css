@@ -1,0 +1,18 @@
+
+.ImLate {
+
+    width: 363px;
+    height: 101px;
+    font-size: 75px;
+    text-shadow: 7px 0px 3px white;
+    color: transparent;
+    background-color: #8793b4a8;
+    border-radius: 50px;
+    border-bottom: 8px solid #7c58e1;
+    border-top: 8px solid #b28ae9;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    position:relative;
+    top:138px;
+    
+}
