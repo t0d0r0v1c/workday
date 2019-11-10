@@ -12,7 +12,7 @@ import Welcome from './Welcome'
      
   
 class App extends Component {
-
+ 
  state= {
    showPopUp:false,
    showWelcome:false,
@@ -48,11 +48,18 @@ setPinHandler = (e) => {
 }
 
 submitHalder = () => {
-console.log(this.state.pin)
+console.log(this.state.pin);
+this.setState({
+  showPopUp:false
+});
 }
   render(){
-    
-
+    const dolazakStyle = {
+      background:"#00ff048f"
+    }
+    const odlazakStyle = {
+      background: "#ff00009c"
+    }
   return (
     <div className="App">
      <Welcome />
@@ -60,8 +67,8 @@ console.log(this.state.pin)
        
        <MyClock />
       
-    <Button tekstNaDugmetu={'Prijava Dolaska'} dugmetovMetod={this.dolazakHandler}/>
-    <Button tekstNaDugmetu={'Prijava Odlaska'} dugmetovMetod={this.odlazakHandler}/>
+    <Button tekstNaDugmetu={'Prijava Dolaska'} dugmetovMetod={this.dolazakHandler} style={dolazakStyle} />
+    <Button tekstNaDugmetu={'Prijava Odlaska'} dugmetovMetod={this.odlazakHandler} style={odlazakStyle}/>
     {this.state.showPopUp ? ( <>
     <PopUp 
       naslovPopUp={this.state.naslovPopUp} 
