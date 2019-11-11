@@ -11,7 +11,7 @@ export default function Input(props) {
     
     return (
         <div>
-            <input type="text" onChange={props.change} style={inputStyle}/>
+            <input type="password" onChange={props.change} style={inputStyle}/>
         </div>
     )
 }

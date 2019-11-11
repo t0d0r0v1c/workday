@@ -1,0 +1,11 @@
+.WelcomeScreen {
+    margin: 0 auto;
+    z-index: 500;
+    position:absolute;
+    background-color: black;
+    left:95px;
+    width:585px;
+    height: 250px;
+    bottom:203px;
+    top:309px;
+}

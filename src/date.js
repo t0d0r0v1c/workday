@@ -7,7 +7,37 @@ export default function ShowDate() {
 let today = new Date();
 let monthName = (today.getMonth()+1);
 let currentYear = today.getFullYear();
+let currentDay = today.getDay();
 let ime;  
+let imeDana;
+
+switch (currentDay) {
+  case 1:
+    imeDana= 'Ponedeljak'
+    break;
+    case 2:
+      imeDana = 'Utorak'
+      break;
+      case 3:
+        imeDana = 'Sreda'
+        break;
+        case 4:
+          imeDana = 'Četvrtak'
+          break;
+          case 5:
+            imeDana = 'Petak jeej!'
+            break;
+            case 6: 
+            imeDana = 'Subota'
+            break;
+            case 7:
+            imeDana = 'Nedelja'
+            break;
+
+            default:
+              imeDana='Ponedeljak'
+              break;
+}
 
 
 
@@ -57,7 +87,8 @@ let ime;
       let date = today.getDate();
     return (
         <div className="Datum">
-             <p>{date}  {ime} {currentYear} </p>
+<p>{date}  {ime} {currentYear}</p> 
+<p>{imeDana}</p>
         </div>
     )
 }
